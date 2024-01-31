@@ -8,3 +8,12 @@ function CloseMenu() {
     document.getElementById("close-menu").style.display = "block";
     document.getElementById("open-menu").style.display = "none";
   }
+
+  function Delete() {
+    var txt;
+  if (confirm("Are you sure you want to delete?")) {
+    txt = "You confirmed ";
+  } else {
+    txt = "You Cancel!";
+  }
+  }
