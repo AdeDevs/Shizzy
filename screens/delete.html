@@ -1,163 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="icon" type="image/svg+xml" href="../shizzy.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/index.css">
-    <link rel="stylesheet" href="../styles/dashboard.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/dashboard.css" />
     <script defer src="../script.js"></script>
     <title>Shizzy Admn</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="dashboard">
-        <header>
-          <section>
-            <img id="open-menu" onClick="OpenMenu()" src="../assets/menu.png" />
-            <img id="close-menu" onClick="CloseMenu()" src="../assets/close.png" />
-            <h1>Welcome Admin</h1>
-          </section>
-          <section>
-            <img src="../assets/profile.png" alt="hello"/>
-            <p>John Doe</p>
-          </section>
-        </header>
-  
-        <div class="admin-box">
-          <aside class="left-nav">
-            <div class="left-nav-top">
-              <img src="../assets/profile.png" />
-              <section>
-                <h1>John Doe</h1>
-                <p>Admnistrator</p>
-              </section>
-            </div>
-            <ul>
-              <li>
-                <a href="../index.html">Dashboard </a>
-              </li>
-              <li>
-                <a href="./create.html">Create Article </a>
-              </li>
-              <li style="border-left: 3px solid red;">
-                <a href="./delete.html">Delete Post</a>
-              </li>
-            </ul>
-          </aside>
-  
-          <aside id="left-nav-mob">
-            <div class="left-nav-top">
-              <img src="../assets/profile.png"/>
-              <section>
-                <h1>John Doe</h1>
-                <p>Admnistrator</p>
-              </section>
-            </div>
-            <ul>
-                <li onClick="CloseMenu()">
-                  <a href="../index.html" >Dashboard </a>
-                </li>
-                <li onClick="CloseMenu()">
-                  <a href="./create.html">Create Article </a>
-                </li>
-                <li style="border-left: 3px solid red;" onClick="CloseMenu()">
-                  <a href="./delete.html"> Delete Posts </a>
-                </li>
-              </ul>
-          </aside>
+      <header>
+        <section>
+          <img id="open-menu" onClick="OpenMenu()" src="../assets/menu.png" />
+          <img
+            id="close-menu"
+            onClick="CloseMenu()"
+            src="../assets/close.png"
+          />
+          <h1>Welcome Admin</h1>
+        </section>
+        <section>
+          <img
+            src="https://i.pinimg.com/564x/78/7f/d2/787fd271ea0f4bd9e49165d52cf8d258.jpg"
+            class="avatar"
+            img
+            src="https://i.pinimg.com/564x/78/7f/d2/787fd271ea0f4bd9e49165d52cf8d258.jpg"
+            class="avatar"
+            alt="hello"
+          />
+          <p>John Doe</p>
+        </section>
+      </header>
 
-          <div>
-            <main class="admin-main">
-          <h1>Delete Articles</h1>
+      <div class="admin-box">
+        <aside class="left-nav">
+          <div class="left-nav-top">
+            <img
+              src="https://i.pinimg.com/564x/78/7f/d2/787fd271ea0f4bd9e49165d52cf8d258.jpg"
+              class="avatar"
+              img
+              src="https://i.pinimg.com/564x/78/7f/d2/787fd271ea0f4bd9e49165d52cf8d258.jpg"
+              class="avatar"
+            />
+            <section>
+              <h1>John Doe</h1>
+              <p>Admnistrator</p>
+            </section>
+          </div>
+          <ul>
+            <li>
+              <a href="../index.html">Dashboard </a>
+            </li>
+            <li>
+              <a href="./create.html">Create Article </a>
+            </li>
+            <li style="border-left: 3px solid red">
+              <a href="./delete.html">Delete Post</a>
+            </li>
+          </ul>
+        </aside>
 
-          <section>
-            <div>
-              <aside>
-                <img src="../assets/third.webp" />
-              </aside>
-              <article>
-              <h2>Athene Network Review – How to mine ATH Coin, Legit or Scam?</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio magnam mollitia odit assumenda veniam vitae praesentium enim id, rem nulla ipsum quia nemo error? Earum corporis quod vitae! Modi, harum.</p>
-              <button type="submit" onclick="Delete()">Delete</button>
-              </article>
-            </div>
-            <div>
-              <aside>
-                <img src="../assets/third.webp" />
-              </aside>
+        <aside id="left-nav-mob">
+          <div class="left-nav-top">
+            <img
+              src="https://i.pinimg.com/564x/78/7f/d2/787fd271ea0f4bd9e49165d52cf8d258.jpg"
+              class="avatar"
+              img
+              src="https://i.pinimg.com/564x/78/7f/d2/787fd271ea0f4bd9e49165d52cf8d258.jpg"
+              class="avatar"
+            />
+            <section>
+              <h1>John Doe</h1>
+              <p>Admnistrator</p>
+            </section>
+          </div>
+          <ul>
+            <li onClick="CloseMenu()">
+              <a href="../index.html">Dashboard </a>
+            </li>
+            <li onClick="CloseMenu()">
+              <a href="./create.html">Create Article </a>
+            </li>
+            <li style="border-left: 3px solid red" onClick="CloseMenu()">
+              <a href="./delete.html"> Delete Posts </a>
+            </li>
+          </ul>
+        </aside>
+
+        <div>
+          <main class="admin-main">
+            <h1>Delete Articles</h1>
+
+            <section>
+              <div>
+                <aside>
+                  <img src="../assets/third.webp" />
+                </aside>
                 <article>
-                  <h2>Athene Network Review – How to mine ATH Coin, Legit or Scam?</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis quis a numquam magni, sequi totam voluptatibus, consectetur sunt rem nisi iusto quisquam, odit voluptatem dolores culpa sit amet omnis.</p>
+                  <h2>
+                    Athene Network Review – How to mine ATH Coin, Legit or Scam?
+                  </h2>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Odio magnam mollitia odit assumenda veniam vitae praesentium
+                    enim id, rem nulla ipsum quia nemo error? Earum corporis
+                    quod vitae! Modi, harum.
+                  </p>
                   <button type="submit" onclick="Delete()">Delete</button>
                 </article>
-            </div>
-            <div>
-              <aside>
-                <img src="../assets/third.webp" />
-              </aside>
+              </div>
+              <div>
+                <aside>
+                  <img src="../assets/third.webp" />
+                </aside>
                 <article>
-                  <h2>Athene Network Review – How to mine ATH Coin, Legit or Scam?</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis quis a numquam magni, sequi totam voluptatibus, consectetur sunt rem nisi iusto quisquam, odit voluptatem dolores culpa sit amet omnis.</p>
+                  <h2>
+                    Athene Network Review – How to mine ATH Coin, Legit or Scam?
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero veritatis quis a numquam magni, sequi totam
+                    voluptatibus, consectetur sunt rem nisi iusto quisquam, odit
+                    voluptatem dolores culpa sit amet omnis.
+                  </p>
                   <button type="submit" onclick="Delete()">Delete</button>
                 </article>
-            </div>
-            <div>
-              <aside>
-                <img src="../assets/third.webp" />
-              </aside>
+              </div>
+              <div>
+                <aside>
+                  <img src="../assets/third.webp" />
+                </aside>
                 <article>
-                  <h2>Athene Network Review – How to mine ATH Coin, Legit or Scam?</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis quis a numquam magni, sequi totam voluptatibus, consectetur sunt rem nisi iusto quisquam, odit voluptatem dolores culpa sit amet omnis.</p>
+                  <h2>
+                    Athene Network Review – How to mine ATH Coin, Legit or Scam?
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero veritatis quis a numquam magni, sequi totam
+                    voluptatibus, consectetur sunt rem nisi iusto quisquam, odit
+                    voluptatem dolores culpa sit amet omnis.
+                  </p>
                   <button type="submit" onclick="Delete()">Delete</button>
                 </article>
-            </div>
-            <div>
-              <aside>
-                <img src="../assets/third.webp" />
-              </aside>
+              </div>
+              <div>
+                <aside>
+                  <img src="../assets/third.webp" />
+                </aside>
                 <article>
-                  <h2>Athene Network Review – How to mine ATH Coin, Legit or Scam?</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis quis a numquam magni, sequi totam voluptatibus, consectetur sunt rem nisi iusto quisquam, odit voluptatem dolores culpa sit amet omnis.</p>
+                  <h2>
+                    Athene Network Review – How to mine ATH Coin, Legit or Scam?
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero veritatis quis a numquam magni, sequi totam
+                    voluptatibus, consectetur sunt rem nisi iusto quisquam, odit
+                    voluptatem dolores culpa sit amet omnis.
+                  </p>
                   <button type="submit" onclick="Delete()">Delete</button>
                 </article>
-            </div>
-            <div>
-              <aside>
-                <img src="../assets/third.webp" />
-              </aside>
+              </div>
+              <div>
+                <aside>
+                  <img src="../assets/third.webp" />
+                </aside>
                 <article>
-                  <h2>Athene Network Review – How to mine ATH Coin, Legit or Scam?</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis quis a numquam magni, sequi totam voluptatibus, consectetur sunt rem nisi iusto quisquam, odit voluptatem dolores culpa sit amet omnis.</p>
+                  <h2>
+                    Athene Network Review – How to mine ATH Coin, Legit or Scam?
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero veritatis quis a numquam magni, sequi totam
+                    voluptatibus, consectetur sunt rem nisi iusto quisquam, odit
+                    voluptatem dolores culpa sit amet omnis.
+                  </p>
                   <button type="submit" onclick="Delete()">Delete</button>
                 </article>
-            </div>
-            <div>
-              <aside>
-                <img src="../assets/third.webp" />
-              </aside>
+              </div>
+              <div>
+                <aside>
+                  <img src="../assets/third.webp" />
+                </aside>
                 <article>
-                  <h2>Athene Network Review – How to mine ATH Coin, Legit or Scam?</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis quis a numquam magni, sequi totam voluptatibus, consectetur sunt rem nisi iusto quisquam, odit voluptatem dolores culpa sit amet omnis.</p>
+                  <h2>
+                    Athene Network Review – How to mine ATH Coin, Legit or Scam?
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero veritatis quis a numquam magni, sequi totam
+                    voluptatibus, consectetur sunt rem nisi iusto quisquam, odit
+                    voluptatem dolores culpa sit amet omnis.
+                  </p>
                   <button type="submit" onclick="Delete()">Delete</button>
                 </article>
-            </div>
-            <div>
-              <aside>
-                <img src="../assets/third.webp" />
-              </aside>
+              </div>
+              <div>
+                <aside>
+                  <img src="../assets/third.webp" />
+                </aside>
                 <article>
-                  <h2>Athene Network Review – How to mine ATH Coin, Legit or Scam?</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis quis a numquam magni, sequi totam voluptatibus, consectetur sunt rem nisi iusto quisquam, odit voluptatem dolores culpa sit amet omnis.</p>
+                  <h2>
+                    Athene Network Review – How to mine ATH Coin, Legit or Scam?
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero veritatis quis a numquam magni, sequi totam
+                    voluptatibus, consectetur sunt rem nisi iusto quisquam, odit
+                    voluptatem dolores culpa sit amet omnis.
+                  </p>
                   <button type="submit" onclick="Delete()">Delete</button>
                 </article>
-            </div>
-          </section>
-          
-        </main>
+              </div>
+              <div>
+                <aside>
+                  <img src="../assets/third.webp" />
+                </aside>
+                <article>
+                  <h2>
+                    Athene Network Review – How to mine ATH Coin, Legit or Scam?
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero veritatis quis a numquam magni, sequi totam
+                    voluptatibus, consectetur sunt rem nisi iusto quisquam, odit
+                    voluptatem dolores culpa sit amet omnis.
+                  </p>
+                  <button type="submit" onclick="Delete()">Delete</button>
+                </article>
+              </div>
+            </section>
+          </main>
         </div>
-        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
