@@ -1,0 +1,264 @@
+.dashboard {
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+    background-color: red;
+}
+
+.dashboard a {
+    color: inherit;
+    text-decoration: none;
+    padding: 20px 20px;
+}
+
+.dashboard a.active {
+    border-left: 2px solid #000;
+}
+
+.dashboard ul li:first-child a.active {
+    border: none;
+}
+
+.dashboard header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    color: #fff;
+    padding: 30px 40px;
+    font-family: "Poppins", sans-serif;
+    background-color: #1441C9;
+}
+
+.dashboard header section {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard header section img {
+    margin-right: 10px;
+    width: 30px;
+    display: block;
+}
+
+.admin-box {
+    display: flex;
+    height: 90vh;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* left-nav-mobile design */
+#open-menu {
+    margin-right: 20px;
+    display: none;
+}
+
+#close-menu {
+    width: 20px;
+    display: none;
+    margin: 0 15px 0px 12px;
+}
+
+#left-nav-mob {
+    height: 94vh;
+    position: absolute;
+    top: -1px;
+    display: none;
+    width: 75%;
+    color: #fff;
+    background-color: #1441C9;
+    box-sizing: border-box;
+    padding: 20px 20px;
+}
+
+#left-nav-mob .left-nav-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+#left-nav-mob .left-nav-top h1 {
+    font-size: 15px;
+}
+
+#left-nav-mob .left-nav-top p {
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+#left-nav-mob .left-nav-top img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+#left-nav-mob ul {
+    margin: 30px 0;
+    list-style-type: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+#left-nav-mob ul li {
+    padding: 20px 20px;
+    margin: 30px 0;
+}
+
+/*left-nav desktop design */
+
+.admin-box .left-nav {
+    background-color: #1441C9;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 20px 40px;
+    color: #fff;
+    height: 100%;
+}
+
+.left-nav .left-nav-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.left-nav .left-nav-top h1 {
+    font-size: 15px;
+}
+
+.left-nav .left-nav-top p {
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+.left-nav .left-nav-top img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.left-nav ul {
+    margin: 30px 0;
+    list-style-type: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.left-nav ul li {
+    margin: 30px 0;
+    box-sizing: border-box;
+    padding: 20px 0px;
+}
+
+.admin-box .admin-main {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 29px 25px;
+    box-sizing: border-box;
+    position: fixed;
+    height: 93%;
+    overflow: scroll;
+    right: 25px;
+}
+
+.admin-box .admin-main h1 {
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+}
+
+.admin-box .admin-main section {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.admin-box .admin-main section div {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background-color: #1441C9;
+    color: #fff;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+}
+
+.admin-box .admin-main section div article {
+    margin: 0 10px;
+}
+
+.admin-box .admin-main section div h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.admin-box .admin-main section div p {
+    font-size: 13px;
+}
+
+.admin-box .admin-main section div img {
+    width: 200px;
+    border-radius: 10px;
+    display: block;
+}
+
+.admin-box .admin-main section div button {
+    background-color: red;
+    padding: 10px 30px;
+    color: white;
+    margin: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    transition: 300ms;
+    font-weight: bolder;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .admin-box .admin-main section div button:hover {
+    cursor: pointer;
+    background-color: rgb(142, 0, 0);
+  }
+
+@media (max-width: 1300px) {
+    .admin-box .left-nav {
+        display: none;
+    }
+    .admin-box .admin-main {
+        width: 100%;
+        padding: 15px 0px;
+        position: static;
+        height: 93vh;
+    }
+    .admin-box .admin-main h1 {
+        padding: 0 10px;
+    }
+    .admin-box .admin-main section {
+        display: block;
+        width: 100%;
+    }
+    .admin-box .admin-main section div {
+        display: block;
+        padding: 10px;
+    }
+    .admin-box .admin-main section div img {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .left-nav {
+        display: nonee;
+    }
+    .dashboard header {
+        padding: 20px 10px;
+    }
+    #open-menu {
+        display: block;
+    }
+}

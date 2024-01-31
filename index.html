@@ -4,9 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shizzy Admin</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/dashboard.css">
+    <script defer src="script.js"></script>
+    <title>Shizzy Admn</title>
 </head>
 <body>
-    <h1>Hello Admin</h1>
+    <div class="dashboard">
+        <header>
+          <section>
+            <img id="open-menu" onClick="OpenMenu()" src="./assets/menu.png" />
+            <img id="close-menu" onClick="CloseMenu()" src="./assets/close.png" />
+            <h1>Welcome Admin</h1>
+          </section>
+          <section>
+            <img src="./assets/profile.png" alt="hello"/>
+            <p>John Doe</p>
+          </section>
+        </header>
+  
+        <div class="admin-box">
+          <aside class="left-nav">
+            <div class="left-nav-top">
+              <img src="./assets/profile.png" />
+              <section>
+                <h1>John Doe</h1>
+                <p>Admnistrator</p>
+              </section>
+            </div>
+            <ul>
+              <li>
+                <NavLink to="/dashboard">Dashboard </NavLink>
+              </li>
+              <li>
+                <NavLink to="create">Create Article </NavLink>
+              </li>
+              <li>
+                <NavLink to="admincreate"> View Admin Details </NavLink>
+              </li>
+            </ul>
+          </aside>
+  
+          <aside id="left-nav-mob">
+            <div class="left-nav-top">
+              <img src="./assets/profile.png"/>
+              <section>
+                <h1>John Doe</h1>
+                <p>Admnistrator</p>
+              </section>
+            </div>
+            <ul>
+              <li onClick={CloseMenu}>
+                <NavLink to="">Dashboard </NavLink>
+              </li>
+              <li onClick={CloseMenu}>
+                <NavLink to="create">Create Article </NavLink>
+              </li>
+              <li onClick={CloseMenu}>
+                <NavLink to="admincreate"> View Admin Details </NavLink>
+              </li>
+            </ul>
+          </aside>
+        </div>
+    </div>
 </body>
 </html>
