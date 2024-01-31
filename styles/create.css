@@ -1,0 +1,94 @@
+.create-posts {
+    display: flex;
+    height: 100%;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 29px 25px;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .create-posts form {
+    width: 100%;
+    position: relative;
+  }
+  
+  .create-posts input,
+  .create-posts textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #1441c936;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .create-posts input {
+    border-radius: 10px 10px 0 0;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-family: "Josefin Sans", sans-serif;
+    border: 2px solid #1441c9;
+  }
+  
+  .create-posts textarea {
+    border-radius: 0 0 10px 10px;
+    border: 2px solid #1441c9;
+    border-top: none;
+    height: 400px;
+  }
+  
+  .create-posts .cat {
+      display: flex;
+      margin: 10px 0;
+      text-transform: capitalize;
+      align-items: center;
+  }
+  
+  .create-posts .cat select {
+      font-family: "Poppins", sans-serif;
+      background-color: #1441c9;
+      color: #fff;
+      border-radius: 5px;
+      padding: 10px;
+      box-sizing: border-box;
+      border: none;
+  }
+  
+  .create-posts button {
+    display: block;
+    position: absolute;
+    right: 0;
+    background-color: #1441c9;
+    padding: 10px 30px;
+    color: white;
+    margin: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    transition: 300ms;
+    font-weight: bolder;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .create-posts button:hover {
+    background-color: #001b6c;
+  }
+  
+  
+  @media (max-width: 1300px) {
+      .create-posts {
+          padding:10px;
+      }
+      .create-posts form {
+          height: 100%;
+          position: static;
+      }
+      .create-posts textarea {
+          height: 78%;
+      }
+      .create-posts button {
+          margin-right: 15px;
+      }
+  }

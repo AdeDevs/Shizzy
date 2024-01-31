@@ -2,7 +2,6 @@
     box-sizing: border-box;
     height: 100vh;
     overflow: hidden;
-    background-color: red;
 }
 
 .dashboard a {
@@ -212,6 +211,7 @@
 .admin-box .admin-main section div button {
     background-color: red;
     padding: 10px 30px;
+    width: 100%;
     color: white;
     margin: 10px 0;
     text-transform: uppercase;
