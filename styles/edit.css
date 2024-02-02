@@ -5,8 +5,6 @@
     box-sizing: border-box;
     position: fixed;
     height: 93%;
-    background-color: green;
-    display: block;
     overflow: scroll;
     right: 25px;
 }
@@ -19,14 +17,12 @@
  .admin-edit section {
     box-sizing: border-box;
     display: flex;
-    background-color: purple;
-    display: flex;
-    overflow-x: scroll;
+    flex-wrap: wrap;
 }
 
  .admin-edit section div {
     margin: 10px;
-    min-width: 500px;
+    width: 500px;
     padding: 10px 20px;
     border-radius: 10px;
     border: 2px solid #000;
@@ -93,11 +89,9 @@
      .admin-edit section {
         box-sizing: border-box;
         width: 100%;
-        display: flex;
-        overflow-x: scroll;
     }
      .admin-edit section div {
-        display: flex;
+        display: block;
         width: 100%;
         padding: 10px;
     }

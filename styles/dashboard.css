@@ -1,7 +1,7 @@
 .dashboard {
     box-sizing: border-box;
     height: 100vh;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .dashboard a {
@@ -42,7 +42,6 @@
 }
 
 .admin-box {
-    background-color: red;
     display: flex;
     height: 90vh;
     box-sizing: border-box;
