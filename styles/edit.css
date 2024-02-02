@@ -5,6 +5,8 @@
     box-sizing: border-box;
     position: fixed;
     height: 93%;
+    background-color: green;
+    display: block;
     overflow: scroll;
     right: 25px;
 }
@@ -17,12 +19,14 @@
  .admin-edit section {
     box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
+    background-color: purple;
+    display: flex;
+    overflow-x: scroll;
 }
 
  .admin-edit section div {
     margin: 10px;
-    width: 500px;
+    min-width: 500px;
     padding: 10px 20px;
     border-radius: 10px;
     border: 2px solid #000;
@@ -86,15 +90,15 @@
      .admin-edit h1 {
         padding: 0 10px;
     }
-     .admin-edit section {
+     /* .admin-edit section {
         box-sizing: border-box;
         width: 100%;
     }
      .admin-edit section div {
-        display: block;
+        display: flex;
         width: 100%;
         padding: 10px;
-    }
+    } */
      .admin-edit section div img {
         margin: 10px 0;
         width: 100%;
