@@ -24,10 +24,23 @@
     font-family: "Poppins", sans-serif;
   }
   
-  .create-posts input {
+  .create-posts .title-img {
+    border-bottom: none;
     border-radius: 10px 10px 0 0;
+    font-size: 15px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .create-posts .title-img:hover {
+    text-decoration: underline;
+  }
+
+  .create-posts input {
     font-size: 25px;
     text-transform: capitalize;
+    border-top: none;
+    border-bottom: none;
     font-family: "Josefin Sans", sans-serif;
     border: 2px solid #1441c9;
   }
