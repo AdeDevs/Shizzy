@@ -9,9 +9,30 @@ function CloseMenu() {
     document.getElementById("open-menu").style.display = "none";
   }
 
+  function LogOut() {
+    document.getElementById("logout").style.display = "initial";
+    document.getElementById("showlog").style.display = "none";
+    document.getElementById("hidelog").style.display = "initial";
+  }
+
+  function HideLog() {
+    document.getElementById("logout").style.display = "none";
+    document.getElementById("showlog").style.display = "initial";
+    document.getElementById("hidelog").style.display = "none";
+  }
+
   function Delete() {
     var txt;
   if (confirm("Are you sure you want to delete?")) {
+    txt = "You confirmed ";
+  } else {
+    txt = "You Cancel!";
+  }
+  }
+
+  function ConfirmLogOut() {
+    var txt;
+  if (confirm("Are you sure you want to logout?")) {
     txt = "You confirmed ";
   } else {
     txt = "You Cancel!";

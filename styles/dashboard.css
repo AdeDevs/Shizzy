@@ -26,8 +26,41 @@
     align-items: center;
     color: #fff;
     padding: 30px 40px;
+    position: relative;
     font-family: "Poppins", sans-serif;
     background-color: #1441C9;
+}
+
+.dashboard header p {
+    cursor: pointer;
+}
+
+.dashboard header #logout{
+    display: none;
+    background-color: rgba(255, 0, 0, 0.59);
+    padding: 10px 15px;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    transition: 300ms;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+#exit {
+    display: none;
+}
+
+#hidelog {
+    display: none;
+}
+
+.dashboard header #logout:hover {
+    background-color: rgb(142, 0, 0);
 }
 
 .dashboard header section {
@@ -268,9 +301,6 @@
         display: block;
         padding: 10px;
     }
-        .admin-box .admin-main section div:nth-last-child(1){
-            margin-bottom: 30px;
-        }
     .admin-box .admin-main section div img {
         margin: 0 auto;
         width: 100%;
@@ -290,5 +320,19 @@
     display: flex;
     background-color: transparent;
     margin-bottom: 0;
-}
+    }
+    .dashboard header #logout a:nth-child(1) {
+        display: none;
+    }
+    .dashboard header #logout{
+        padding: 0px;
+        margin-left: 5px;
+        background-color: transparent;
+    }
+    #exit {
+        display: block;
+    }
+    #exit img {
+        width: 25px;
+    }
 }

@@ -27,7 +27,12 @@
             alt=""
             srcset=""
           />
-          <p>John Doe</p>
+          <p id="showlog" onclick="LogOut()">John Doe</p>
+          <p id="hidelog" onclick="HideLog()">John Doe</p>
+          <div id="logout">
+          <a href="../index.html" onclick="ConfirmLogOut()">Log Out</a>
+          <a id="exit" href="../index.html" onclick="ConfirmLogOut()"><img src="../assets/logout.png" alt="" srcset=""></a>
+        </div>
         </section>
       </header>
 
@@ -51,7 +56,7 @@
               <a href="./create.html">Create Article </a>
             </li>
             <li>
-              <a href="./delete.html">Delete Post</a>
+              <a href="./delete.html">Search Post</a>
             </li>
           </ul>
         </aside>
@@ -75,7 +80,7 @@
               <a href="./create.html">Create Article </a>
             </li>
             <li onClick="CloseMenu()">
-              <a href="./delete.html"> Delete Posts </a>
+              <a href="./delete.html"> Search Posts </a>
             </li>
           </ul>
         </aside>
