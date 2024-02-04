@@ -263,6 +263,7 @@
     .admin-box .admin-main section {
         display: block;
         width: 100%;
+        padding-bottom: 25px;
     }
     .admin-box .admin-main section div {
         display: block;
