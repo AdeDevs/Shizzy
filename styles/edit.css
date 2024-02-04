@@ -25,8 +25,8 @@
 }
 
 .admin-dash section main div {
+    max-width: 400px;
     min-width: 300px;
-    height: fit-content;
     margin: 10px;
     padding: 10px 20px;
     border-radius: 10px;

@@ -265,12 +265,12 @@
         width: 100%;
     }
     .admin-box .admin-main section div {
-        display: block;
+        display: flex;
         padding: 10px;
     }
     .admin-box .admin-main section div img {
         margin: 10px 0;
-        width: 100%;
+        width: 80%;
     }
     .left-nav {
         display: nonee;
