@@ -263,12 +263,14 @@
     .admin-box .admin-main section {
         display: block;
         width: 100%;
-        padding-bottom: 25px;
     }
     .admin-box .admin-main section div {
         display: block;
         padding: 10px;
     }
+        .admin-box .admin-main section div:nth-last-child(1){
+            margin-bottom: 30px;
+        }
     .admin-box .admin-main section div img {
         margin: 0 auto;
         width: 100%;
@@ -286,5 +288,7 @@
     .admin-box .admin-main section div .btns {
     width: 100%;
     display: flex;
+    background-color: transparent;
+    margin-bottom: 0;
 }
 }
