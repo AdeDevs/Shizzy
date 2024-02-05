@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../styles/reset.css" />
     <link rel="stylesheet" href="../styles/index.css" />
     <link rel="stylesheet" href="../styles/dashboard.css" />
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/create.css">
     <script defer src="../script.js"></script>
     <title>Shizzy Admn</title>
   </head>
@@ -95,8 +97,85 @@
             </li>
           </ul>
         </aside>
+      <div class="admin-login">
+        <div id="login">
+            <h1>Search For Post</h1>
+            <form action="">
+                <input id="title" required type="text" placeholder="Title" />
+                <div class="search-cat">
+                  <p>category: &nbsp;</p>
+                  <select name="category">
+                    <option value="Update">Update</option>
+                    <option value="Crypto">Crypto</option>
+                    <option value="Airtime">Airtine</option>
+                  </select>
+                  </div>
+  
+                <button onclick="SearchPost()" type="submit">Search</button> 
+            </form>
 
-        <div>
+            <section id="search-result">
+              <div>
+                <aside>
+                  <img src="../assets/third.webp" />
+                </aside>
+                <article>
+                  <h2>
+                    Athene Network Review – How to mine ATH Coin, Legit or Scam?
+                  </h2>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Odio magnam mollitia odit assumenda veniam vitae praesentium
+                    enim id, rem nulla ipsum quia nemo error? Earum corporis
+                    quod vitae! Modi, harum.
+                  </p>
+                    <button class="btns" type="submit" onclick="DeletePost()">Delete</button>
+                </article>
+              </div>
+            </section>
+        </div>
+    </div>
+    <!-- <div class="admin-login">
+      <div id="login">
+          <h1>Search For Post</h1>
+          <form action="">
+              <input id="title" required type="email" placeholder="Title" />
+              <div>
+                <p>category: &nbsp;</p>
+                <select name="category">
+                  <option value="Update">Update</option>
+                  <option value="Crypto">Crypto</option>
+                  <option value="Airtime">Airtine</option>
+                </select>
+                </div>
+
+              <button type="submit"><a class href="./screens/dashboard.html">Search</a></button> 
+          </form>
+          <section>
+            <div>
+              <aside>
+                <img src="../assets/third.webp" />
+              </aside>
+              <article>
+                <h2>
+                  Athene Network Review – How to mine ATH Coin, Legit or Scam?
+                </h2>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Odio magnam mollitia odit assumenda veniam vitae praesentium
+                  enim id, rem nulla ipsum quia nemo error? Earum corporis
+                  quod vitae! Modi, harum.
+                </p>
+                <div class="btns">
+                  <button type="submit" onclick="Delete()">Delete</button>
+                  <button type="submit">Edit</button>
+                </div>
+              </article>
+            </div>
+          </section>
+      </div>
+  </div> -->
+        <!-- <div>
           <main class="admin-main">
             <h1>Search For or Edit Articles</h1>
 
@@ -263,7 +342,7 @@
               </div>
             </section>
           </main>
-        </div>
+        </div> -->
       </div>
     </div>
   </body>

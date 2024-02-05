@@ -5,8 +5,8 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    height: 100vh;
-    position: relative;
+    height: 100%;
+    overflow-y: scroll;
   }
 
   .admin-login .forgot-password {
@@ -73,13 +73,17 @@
     background-image: url("../assets/lock.png");
   }
   
+  .admin-login #login #title {
+    background-image: url("../assets/title.png");
+  }
+
   #login input:focus,
-  #login #lock:focus {
+  #login #title:focus {
     background-image: none;
     text-indent: 0;
   }
   
-  #login button {
+  #login form button {
     background-color: rgb(0, 45, 181);
     padding: 15px 50px;
     color: white;
@@ -91,9 +95,10 @@
     font-weight: bolder;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    border: 2px solid black;
   }
   
-  #login button:hover {
+  #login form button:hover {
     cursor: pointer;
     background-color: rgb(0, 25, 101);
   }
@@ -102,9 +107,96 @@
     color: inherit;
     text-decoration: none;
   }
+
+  .admin-login #login form .search-cat {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    margin: 10px auto;
+    margin-top: -15px;
+    width: 300px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .admin-login #login form .search-cat p {
+    color: #000;
+  }
+
+.admin-login select {
+    font-family: "Poppins", sans-serif;
+    background-color: #1441c9;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    box-sizing: border-box;
+    border: none;
+}
+
+#search-result {
+  display: none;
+}
+
+.admin-login #search-result {
+  background-color: #1441c9;
+  border-radius: 10px;
+  width: 500px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-family: "poppins", sans-serif;
+  font-size: 13px;
+  text-align: center;
+  border: 2px solid #333;
+  margin: 10px auto;
+}
+
+.admin-login #search-result img {
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  display: block;
+}
+
+.admin-login #search-result h2 {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
+
+.admin-login #search-result .btns {
+  background-color: red;
+  padding: 15px 50px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: none;
+  width: 300px;
+  margin: 10px;
+  transition: 300ms;
+  border: 2px solid black;
+  font-weight: bolder;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.admin-login #search-result .btns:hover {
+  background-color: rgb(142, 0, 0);
+  border: 2px solid #fff;
+}
+
+.create-posts .cat div {
+display: flex;
+align-items: center;
+}
   
   @media (max-width: 700px) {
     .admin-login {
+      height: 100vh;
       width: 100%;
       box-sizing: border-box;
     }
@@ -117,7 +209,24 @@
       box-sizing: border-box;
       width: 80%;
     }
-    #login button {
+    .admin-login #login form .search-cat {
+      width: 80%;
+    }
+    .admin-login #search-result {
+      width: 80%;
+      height: fit-content;
+      box-sizing: border-box;
+      margin: 40px auto;
+      margin-bottom: 100px;
+    }
+    .admin-login #search-result .btns  {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .admin-login #search-result img {
+      width: 100%;
+    }
+    #login form button {
       width: 80%;
     }
     .admin-login .forgot-password {
