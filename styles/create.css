@@ -1,119 +1,235 @@
-.create-posts {
-    display: flex;
-    height: 100%;
-    width: 1100px;
-    margin: 0 auto;
-    overflow-y: scroll;
-    padding: 29px 25px;
-    align-items: center;
-    background: transparent;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  .create-posts form {
-    width: 100%;
-    position: relative;
-  }
-  
-  .create-posts input,
-  .create-posts textarea {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    background-color: #1441c936;
-    padding: 20px;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  .create-posts .title-img {
-    border-bottom: none;
-    border-radius: 10px 10px 0 0;
-    font-size: 15px;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-
-  .create-posts .title-img:hover {
-    text-decoration: underline;
-  }
-
-  .create-posts input {
-    font-size: 25px;
-    text-transform: capitalize;
-    border-top: none;
-    border-bottom: none;
-    font-family: "Josefin Sans", sans-serif;
-    border: 2px solid #1441c9;
-  }
-  
-  .create-posts textarea {
-    border-radius: 0 0 10px 10px;
-    border: 2px solid #1441c9;
-    border-top: none;
-    height: 400px;
-  }
-  
-  .create-posts .cat {
-      display: flex;
-      margin: 10px 0;
-      text-transform: capitalize;
-      align-items: center;
-  }
-  
-  .create-posts .cat select {
-      font-family: "Poppins", sans-serif;
-      background-color: #1441c9;
-      color: #fff;
-      border-radius: 5px;
-      padding: 10px;
-      box-sizing: border-box;
-      border: none;
-  }
-  
-.create-posts .cat div {
-  display: flex;
+.admin-login {
+  color: #000;
+  width: 60%;
   align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
-  .create-posts button {
-    display: block;
-    position: absolute;
-    right: 0;
-    background-color: #1441c9;
-    padding: 10px 30px;
-    color: white;
-    margin: 10px 0;
-    text-transform: uppercase;
-    border-radius: 5px;
-    border: none;
-    transition: 300ms;
-    font-weight: bolder;
-    font-family: "Poppins", sans-serif;
+.admin-login .forgot-password {
+  text-decoration: underline 0.15em rgba(255, 0, 0, 0.347);
+  text-underline-offset: 0.2em;
+  transition: text-decoration-color 300ms, text-underline-offset 300ms;
+  text-align: center;
+  margin: 15px auto;
+  text-transform: capitalize;
+  width: 50%;
+  display: block;
+  color: #808080;
+  font-family: "Poppins", sans-serif;
+  transition: 300ms;
+}
+
+.admin-login .forgot-password:hover {
+  text-decoration-color: rgb(255, 0, 0);
+  text-underline-offset: 0.5em;
+  color: #000;
+}
+
+.admin-login p {
+  color: white;
+}
+
+.admin-login h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 20px auto;
+}
+
+#search {
+  width: 100%;
+}
+
+.admin-login #search form {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.admin-login #search input {
+  font-family: "Montserrat", sans-serif;
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: block;
+  padding: 15px;
+  box-sizing: border-box;
+  color: black;
+  background-image: url("../assets/email.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  text-indent: 30px;
+  background-position: 15px 13px;
+  transition: 300ms;
+  margin: 30px auto;
+}
+
+.admin-login #search #lock {
+  background-image: url("../assets/lock.png");
+}
+
+.admin-login #search #title {
+  background-image: url("../assets/title.png");
+}
+
+#search input:focus,   #search #lock:focus,
+#search #title:focus {
+  background-image: none;
+  text-indent: 0;
+}
+
+#search form button {
+  background-color: rgb(0, 45, 181);
+  padding: 15px 50px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: none;
+  width: 300px;
+  transition: 300ms;
+  font-weight: bolder;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid black;
+}
+
+#search form button:hover {
+  cursor: pointer;
+  background-color: rgb(0, 25, 101);
+}
+
+#search button a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.admin-login #search form .search-cat {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  margin: 10px auto;
+  margin-top: -15px;
+  width: 300px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-login #search form .search-cat p {
+  color: #000;
+}
+
+.admin-login select {
+  font-family: "Poppins", sans-serif;
+  background-color: #1441c9;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  box-sizing: border-box;
+  border: none;
+}
+
+#search-result {
+display: none;
+}
+
+.admin-login #search-result {
+background-color: #1441c9;
+border-radius: 10px;
+width: 500px;
+box-sizing: border-box;
+padding: 10px;
+font-family: "poppins", sans-serif;
+font-size: 13px;
+text-align: center;
+border: 2px solid #333;
+margin: 10px auto;
+}
+
+.admin-login #search-result img {
+width: 300px;
+margin: 0 auto;
+border-radius: 10px;
+border: 2px solid #fff;
+display: block;
+}
+
+.admin-login #search-result h2 {
+font-size: 20px;
+font-family: "Poppins", sans-serif;
+font-weight: bold;
+color: #fff;
+}
+
+.admin-login #search-result .btns {
+background-color: red;
+padding: 15px 50px;
+color: white;
+text-transform: uppercase;
+border-radius: 10px;
+border: none;
+width: 300px;
+margin: 10px;
+transition: 300ms;
+border: 2px solid black;
+font-weight: bolder;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+.admin-login #search-result .btns:hover {
+background-color: rgb(142, 0, 0);
+border: 2px solid #fff;
+}
+
+.create-posts .cat div {
+display: flex;
+align-items: center;
+}
+
+@media (max-width: 700px) {
+  .admin-login {
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
   }
-  
-  .create-posts button:hover {
-    background-color: #001b6c;
+  .admin-login #search form {
+    box-sizing: border-box;
+    width: 100%;
   }
-  
-  
-  @media (max-width: 1300px) {
-      .create-posts {
-          padding:10px;
-      }
-      .create-posts form {
-          height: 100%;
-          position: static;
-      }
-      .create-posts textarea {
-          height: 78%;
-      }
-      .create-posts button {
-          position: static;
-      }
-      .cat {
-        box-sizing: border-box;
-        display: flex;
-        justify-content: space-between;
-      }
+  .admin-login #search input {
+    margin: 30px auto;
+    box-sizing: border-box;
+    width: 80%;
   }
+  .admin-login #search form .search-cat {
+    width: 80%;
+  }
+  .admin-login #search-result {
+    width: 80%;
+    height: fit-content;
+    box-sizing: border-box;
+    margin: 40px auto;
+    margin-bottom: 100px;
+  }
+  .admin-login #search-result .btns  {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .admin-login #search-result img {
+    width: 100%;
+  }
+  #search form button {
+    width: 80%;
+  }
+  .admin-login .forgot-password {
+    width: 100%;
+  }
+}
