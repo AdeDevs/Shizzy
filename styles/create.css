@@ -6,6 +6,7 @@
     overflow-y: scroll;
     padding: 29px 25px;
     align-items: center;
+    background: transparent;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }
