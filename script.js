@@ -27,6 +27,7 @@ function SearchPost() {
 }
 function DeletePost() {
   document.getElementById("search-result").style.display = "none";
+  document.getElementById("search").style.height = "initial";
   var txt;
   if (confirm("Are you sure you want to delete?")) {
     txt = "You confirmed ";
