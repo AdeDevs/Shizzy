@@ -151,7 +151,7 @@
 .admin-login #search-result {
 background-color: #1441c9;
 border-radius: 10px;
-min-width: 300px;
+min-width: 300px; 
 box-sizing: border-box;
 padding: 10px;
 font-family: "poppins", sans-serif;
