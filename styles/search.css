@@ -43,6 +43,7 @@
 
 #search {
   width: 100%;
+  overflow: scroll;
 }
 
 .admin-login #search form {
@@ -137,24 +138,33 @@
 }
 
 #search-result {
-display: none;
+  
+}
+
+.locate {
+  display: flex;
+  margin: 10px auto;
+  padding: 10px;
+  overflow:scroll ;
 }
 
 .admin-login #search-result {
 background-color: #1441c9;
 border-radius: 10px;
-width: 500px;
+min-width: 300px;
 box-sizing: border-box;
 padding: 10px;
 font-family: "poppins", sans-serif;
 font-size: 13px;
 text-align: center;
 border: 2px solid #333;
-margin: 10px auto;
+margin: 10px;
+height: fit-content;
+overflow: scroll;
 }
 
 .admin-login #search-result img {
-width: 300px;
+width: 100%;
 margin: 0 auto;
 border-radius: 10px;
 border: 2px solid #fff;
@@ -162,7 +172,7 @@ display: block;
 }
 
 .admin-login #search-result h2 {
-font-size: 20px;
+font-size: 16px;
 font-family: "Poppins", sans-serif;
 font-weight: bold;
 color: #fff;
@@ -175,8 +185,9 @@ color: white;
 text-transform: uppercase;
 border-radius: 10px;
 border: none;
-width: 300px;
+width: 100%;
 margin: 10px;
+margin: 0 auto;
 transition: 300ms;
 border: 2px solid black;
 font-weight: bolder;
@@ -197,6 +208,7 @@ align-items: center;
 @media (max-width: 700px) {
   .admin-login {
     height: 100vh;
+    overflow-x: scroll;
     width: 100%;
     box-sizing: border-box;
   }
@@ -216,8 +228,7 @@ align-items: center;
     width: 80%;
     height: fit-content;
     box-sizing: border-box;
-    margin: 40px auto;
-    margin-bottom: 100px;
+    margin: 10px;
   }
   .admin-login #search-result .btns  {
     width: 100%;
@@ -231,5 +242,11 @@ align-items: center;
   }
   .admin-login .forgot-password {
     width: 100%;
+  }
+}
+
+@media (max-width: 1040px) {
+  .admin-login #search-result {
+    margin-bottom: 35px;
   }
 }
