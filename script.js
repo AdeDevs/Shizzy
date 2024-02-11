@@ -23,6 +23,7 @@ function HideLog() {
 
 function SearchPost() {
   document.getElementById("search-result").style.display = "block";
+  document.getElementById("locate").style.display = "flex";
 }
 function DeletePost() {
   document.getElementById("search-result").style.display = "none";

@@ -141,8 +141,8 @@
   
 }
 
-.locate {
-  display: flex;
+#locate {
+  display: none;
   margin: 10px auto;
   padding: 10px;
   overflow:scroll ;
