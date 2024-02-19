@@ -9,7 +9,7 @@
   overflow-y: scroll;
 }
 
-.admin-login .forgot-password {
+/* .admin-login .forgot-password {
   text-decoration: underline 0.15em rgba(255, 0, 0, 0.347);
   text-underline-offset: 0.2em;
   transition: text-decoration-color 300ms, text-underline-offset 300ms;
@@ -27,7 +27,28 @@
   text-decoration-color: rgb(255, 0, 0);
   text-underline-offset: 0.5em;
   color: #000;
+} */
+
+.admin-login a {
+  text-decoration: underline 0.15em rgba(255, 0, 0, 0.347);
+  text-underline-offset: 0.2em;
+  transition: text-decoration-color 300ms, text-underline-offset 300ms;
+  text-align: center;
+  margin: 15px auto;
+  text-transform: capitalize;
+  width: 50%;
+  display: block;
+  color: #808080;
+  font-family: "Poppins", sans-serif;
+  transition: 300ms;
 }
+
+.admin-login a:hover {
+  text-decoration-color: rgb(255, 0, 0);
+  text-underline-offset: 0.5em;
+  color: #000;
+}
+
 
 .admin-login p {
   color: white;
@@ -142,9 +163,9 @@
 }
 
 #locate {
-  display: none;
   margin: 10px auto;
   padding: 10px;
+  display: flex;
   overflow:scroll ;
 }
 
@@ -166,6 +187,7 @@ overflow: scroll;
 .admin-login #search-result img {
 width: 100%;
 margin: 0 auto;
+height: 30vh;
 border-radius: 10px;
 border: 2px solid #fff;
 display: block;

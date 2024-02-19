@@ -2,8 +2,9 @@
     overflow-y: scroll;
     box-sizing: border-box;
     width: 1100px;
-    height: 93vh;
+    height: 100vh;
     margin: 0 auto;
+    padding-bottom: 80px;
     font-family: "Poppins", sans-serif;
 }
 
@@ -25,8 +26,8 @@
 }
 
 .admin-dash section main div {
-    max-width: 400px;
     min-width: 300px;
+    max-width: 300px;
     margin: 10px;
     padding: 10px 20px;
     border-radius: 10px;
@@ -35,8 +36,10 @@
     background-color: #1441C9;
 }
 
+
 .admin-dash section main div h2 {
     font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
     font-size: 20px;
     font-weight: bold;
 }
@@ -47,9 +50,10 @@
     border-radius: 10px;
     display: block;
     margin-bottom: 10px;
+    max-height: 40vh;
 }
 
-.admin-dash section main div button {
+.admin-dash section main div button, .admin-dash section main div input {
     background-color: red;
     padding: 10px 30px;
     width: 100%;
