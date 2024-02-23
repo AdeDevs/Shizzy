@@ -42,16 +42,25 @@
   font-size: 25px;
   text-transform: capitalize;
   border-top: none;
-  border-bottom: none;
+  border-bottom:1px solid #1441c9;
   font-family: "Josefin Sans", sans-serif;
-  border: 2px solid #1441c9;
+  border: 1px solid #1441c9;
 }
 
 .create-posts textarea {
-  border-radius: 0 0 10px 10px;
-  border: 2px solid #1441c9;
+  border-radius: 0;
+  border: 1px solid #1441c9;
   border-top: none;
+  border-bottom: none;
   height: 400px;
+}
+
+#link {
+  border-top: 1px solid #1441c9;
+  border-radius: 0 0 10px 10px;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  text-transform: none;
 }
 
 .create-posts .cat {

@@ -37,9 +37,11 @@
           <p id="showlog" onclick="LogOut()">John Doe</p>
           <p id="hidelog" onclick="HideLog()">John Doe</p>
           <div id="logout">
-          <a href="../index.html" onclick="ConfirmLogOut()">Log Out</a>
-          <a id="exit" href="../index.html" onclick="ConfirmLogOut()"><img src="../assets/logout.png" alt="" srcset=""></a>
-        </div>
+            <a href="../index.html" onclick="ConfirmLogOut()">Log Out</a>
+            <a id="exit" href="../index.html" onclick="ConfirmLogOut()"
+              ><img src="../assets/logout.png" alt="" srcset=""
+            /></a>
+          </div>
         </section>
       </header>
 
@@ -101,29 +103,45 @@
         </aside>
         <div class="create-posts">
           <form action="">
-            <input class="title-img" type="file" id="img" name="img" accept="image/*">
             <input
+            required
+              class="title-img"
+              type="file"
+              id="img"
+              name="img"
+              accept="image/*"
+            />
+            <input
+            required
               type="text"
               name="title"
               placeholder="Type in your article title"
             />
             <textarea
+            required
               name=""
               id=""
               cols="30"
               rows="10"
               placeholder="Type in your main article"
             ></textarea>
+            <input
+            required
+              type="url"
+              name="link"
+              id="link"
+              placeholder="Type in your links"
+            />
             <section class="cat">
               <div>
-              <p>category: &nbsp;</p>
-              <select name="category">
-                <option value="Update">Update</option>
-                <option value="Crypto">Crypto</option>
-                <option value="Free Browsing">Free Browsing</option>
-              </select>
+                <p>category: &nbsp;</p>
+                <select name="category">
+                  <option value="Update">Update</option>
+                  <option value="Crypto">Crypto</option>
+                  <option value="Free Browsing">Free Browsing</option>
+                </select>
               </div>
-              
+
               <button>Post</button>
             </section>
           </form>
